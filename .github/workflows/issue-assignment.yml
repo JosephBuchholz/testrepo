@@ -1,0 +1,18 @@
+name: Assign Issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  assign_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign issue to a team member
+        uses: actions-ecosystem/action-assign@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: JosephBuchholz
