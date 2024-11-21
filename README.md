@@ -1,5 +1,3 @@
 # testrepo
 
-# Edited this README file
-
-yay!
+A repository for testing/learning how to use GitHub Actions.
